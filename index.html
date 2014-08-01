@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+        <title>coverflow.js</title>
+        <script src="src/coverflow.js"></script>
+        <link rel="stylesheet" href="demo-style.css">
+    </head>
+	<body>
+        <h1 class="title">coverflow.js<small>β</small></h1>
+        <div class="title">
+            <a href="http://github.com/quietshu">author</a>
+            <a href="http://github.com/quietshu/coverflow">fork me</a>
+        </div>
+        <div class="clear"></div>
+        <p class="centering"><a href="http://github.com/quietshu/coverflow"><code>Coverflow.js</code></a> is a JavaScript project to simulate the <a href="en.wikipedia.org/wiki/Cover_Flow">Apple Cover Flow UI effect</a>, <b>without jQuery.</b></p>
+        <p class="centering"><b>Chrome</b> & <b>Safari</b> are only supported now.</p>
+        <div class="demo" id="demo-1"><a href="#demo-1">demo 1</a></div>
+        <div class="coverflow" data-size="180" data-spacing="20" data-shadow="false" data-flat="false" data-bgcolor="#fff" data-width="1000">
+            <img src="img/A.jpg" data-info="Moon Landing">
+            <img src="img/B.jpg" data-info="Red">
+            <img src="img/C.jpg" data-info="Greatest Hits">
+            <img src="img/D.jpg" data-info="Ghost Stories">
+            <img src="img/E.jpg" data-info="Parachutes">
+            <img src="img/F.jpg" data-info="Viva la Vida">
+            <img src="img/G.jpg" data-info="The Best Damn Thing">
+            <img src="img/H.jpg" data-info="The 1st Eleven Years">
+            <img src="img/I.jpg" data-info="American Idiot">
+            <img src="img/A.jpg" data-info="Moon Landing">
+            <img src="img/B.jpg" data-info="Red">
+            <img src="img/C.jpg" data-info="Greatest Hits">
+            <img src="img/D.jpg" data-info="Ghost Stories">
+            <img src="img/E.jpg" data-info="Parachutes">
+            <img src="img/F.jpg" data-info="Viva la Vida">
+            <img src="img/G.jpg" data-info="The Best Damn Thing">
+            <img src="img/H.jpg" data-info="The 1st Eleven Years">
+            <img src="img/I.jpg" data-info="American Idiot">	
+        </div>
+<code class="centering"><pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"coverflow"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-</span><span style='color:#074726; '>size</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"180"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-spacing</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"20"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-shadow</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"false"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-flat</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"false"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-</span><span style='color:#074726; '>bgcolor</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#fff"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-</span><span style='color:#074726; '>width</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"1000"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"img/A.jpg"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-info</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"Moon Landing"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"img/B.jpg"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-info</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"Red"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"img/C.jpg"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-info</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"Greatest Hits"</span><span style='color:#a65700; '>></span>
+    ...
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"img/I.jpg"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-info</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"American Idiot"</span><span style='color:#a65700; '>></span>	
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#a65700; '>></span>
+</pre></code>
+        <div class="demo" id="demo-2"><a href="#demo-2">demo 2</a></div>
+        <p class="centering">You can put everything into it, even a DIV tag.</p>
+        <div class="coverflow" data-size="100" data-spacing="10" data-shadow="false" data-flat="false" data-bgcolor="#fff" data-width="400" data-imgshadow="false">
+            <img src="img/Mac.png" data-info="Happy Mac!">
+            <div id="div-A" data-info="div">
+                <p>This is a HTML element.</p>
+                <a href="javascript:alert('Hi!')">ClickMe!</a>
+            </div>
+            <img src="img/Clarus.png" data-info="png">
+            <img src="img/animator.gif" data-info="gif">
+        </div>
+<code class="centering"><pre><span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#274796; '> </span><span style='color:#074726; '>class</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"coverflow"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-</span><span style='color:#074726; '>size</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"100"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-spacing</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"10"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-shadow</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"false"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-flat</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"false"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-</span><span style='color:#074726; '>bgcolor</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"#fff"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-</span><span style='color:#074726; '>width</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"400"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-imgshadow</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"false"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"img/Mac.png"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-info</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"Happy Mac!"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#274796; '> </span><span style='color:#074726; '>id</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"div-A"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-info</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"div"</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>p</span><span style='color:#a65700; '>></span>This is a HTML element<span style='color:#008c00; '>.</span><span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>p</span><span style='color:#a65700; '>></span>
+        <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#274796; '> </span><span style='color:#074726; '>href</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"javascript:alert('Hi!')"</span><span style='color:#a65700; '>></span>ClickMe!<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>a</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"img/Clarus.png"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-info</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"png"</span><span style='color:#a65700; '>></span>
+    <span style='color:#a65700; '>&lt;</span><span style='color:#800000; font-weight:bold; '>img</span><span style='color:#274796; '> </span><span style='color:#074726; '>src</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"img/animator.gif"</span><span style='color:#274796; '> </span><span style='color:#074726; '>data</span><span style='color:#274796; '>-info</span><span style='color:#808030; '>=</span><span style='color:#0000e6; '>"gif"</span><span style='color:#a65700; '>></span>
+<span style='color:#a65700; '>&lt;/</span><span style='color:#800000; font-weight:bold; '>div</span><span style='color:#a65700; '>></span>
+</pre></code>
+        <div class="demo" id="options"><a href="#options">options</a></div>
+        <p class="centering"><code>data-size</code>: the width of each element</p>
+        <p class="centering"><code>data-spacing</code>: the spacing between two elements</p>
+        <p class="centering"><code>data-shadow</code>: need some refletion effects?</p>
+        <p class="centering"><code>data-flat</code>: disable rotation</p>
+        <p class="centering"><code>data-bgcolor</code>: background color</p>
+        <p class="centering"><code>data-width</code>: the whole width</p>
+        <p class="centering"><code>data-info</code>: title of each element</p>
+        <div class="demo" id="demo-3"><a href="#demo-3">demo 3:</a> no rotation</div>
+        <div class="coverflow" data-size="180" data-spacing="50" data-shadow="false" data-flat="true" data-bgcolor="#fff" data-width="1000">
+            <img src="img/A.jpg" data-info="Moon Landing">
+            <img src="img/B.jpg" data-info="Red">
+            <img src="img/C.jpg" data-info="Greatest Hits">
+            <img src="img/D.jpg" data-info="Ghost Stories">
+            <img src="img/E.jpg" data-info="Parachutes">
+            <img src="img/F.jpg" data-info="Viva la Vida">
+            <img src="img/G.jpg" data-info="The Best Damn Thing">
+            <img src="img/H.jpg" data-info="The 1st Eleven Years">
+            <img src="img/I.jpg" data-info="American Idiot">
+            <img src="img/A.jpg" data-info="Moon Landing">
+            <img src="img/B.jpg" data-info="Red">
+            <img src="img/C.jpg" data-info="Greatest Hits">
+            <img src="img/D.jpg" data-info="Ghost Stories">
+            <img src="img/E.jpg" data-info="Parachutes">
+            <img src="img/F.jpg" data-info="Viva la Vida">
+            <img src="img/G.jpg" data-info="The Best Damn Thing">
+            <img src="img/H.jpg" data-info="The 1st Eleven Years">
+            <img src="img/I.jpg" data-info="American Idiot">	
+        </div>
+        <div class="demo" id="demo-4"><a href="#demo-4">demo 4:</a> shadow & background color</div>
+        <div class="coverflow" data-size="180" data-spacing="20" data-shadow="true" data-flat="false" data-bgcolor="#121212" data-width="1000">
+            <img src="img/A.jpg" data-info="Moon Landing">
+            <img src="img/B.jpg" data-info="Red">
+            <img src="img/C.jpg" data-info="Greatest Hits">
+            <img src="img/D.jpg" data-info="Ghost Stories">
+            <img src="img/E.jpg" data-info="Parachutes">
+            <img src="img/F.jpg" data-info="Viva la Vida">
+            <img src="img/G.jpg" data-info="The Best Damn Thing">
+            <img src="img/H.jpg" data-info="The 1st Eleven Years">
+            <img src="img/I.jpg" data-info="American Idiot">
+            <img src="img/A.jpg" data-info="Moon Landing">
+            <img src="img/B.jpg" data-info="Red">
+            <img src="img/C.jpg" data-info="Greatest Hits">
+            <img src="img/D.jpg" data-info="Ghost Stories">
+            <img src="img/E.jpg" data-info="Parachutes">
+            <img src="img/F.jpg" data-info="Viva la Vida">
+            <img src="img/G.jpg" data-info="The Best Damn Thing">
+            <img src="img/H.jpg" data-info="The 1st Eleven Years">
+            <img src="img/I.jpg" data-info="American Idiot">	
+        </div>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    position: absolute;
+    max-width: 1000px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.coverflow {
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#div-A {
+    background: yellow;
+}
+.title {
+    float: left;
+    font-family: Garamond, "Big Caslon", "Times New Roman", serif;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0.67em 0;
+    color: #444;
+}
+div.title {
+    float: right;
+}
+.title small {
+    font-size: 15px;
+    color: #EF4040;
+    vertical-align: super;
+}
+a {
+    color: #444;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+.clear {
+    clear: both;
+}
+.centering {
+    display: block;
+    font-size: 13px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    width: 800px;
+    margin: 1em auto;
+}
+code {
+    display: inline-block;
+    font-family: Consolas, monospace;
+    color: #156ABD;
+    padding: 1px;
+    background-color: #F2F2F2;
+    vertical-align: bottom;
+    border-radius: 4px;
+    overflow: scroll;
+}
+pre {
+    margin: 0;
+}
+.demo {
+    margin: 3em 0;
+}
