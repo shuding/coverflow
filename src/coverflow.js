@@ -5,9 +5,9 @@ License: The MIT License
 (function(){
     window.onload = function () {
         var setTransform3D = function (el, degree, perspective, z) {
-            degree = Math.max(Math.min(degree, 85), -85);
+            degree = Math.max(Math.min(degree, 90), -90);
             z -= 5;
-            el.style["-webkit-perspective"] = el.style["perspective"] = el.style["-moz-perspective"] = perspective;
+            el.style["-webkit-perspective"] = el.style["perspective"] = el.style["-moz-perspective"] = perspective + "px";
             el.style["-webkit-transform"] = el.style["transform"] = "rotateY(" + degree + "deg) translateZ(" + z + "px)";
         };
         var displayIndex = function (imgSize, spacing, left, imgs, index, flat, width, titleBox) {
