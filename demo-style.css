@@ -47,13 +47,11 @@ a {
     margin: 1em auto;
 }
 code {
-    display: inline-block;
     font-family: Consolas, monospace;
     color: #156ABD;
     padding: 1px;
     background-color: #F2F2F2;
     vertical-align: bottom;
-    border-radius: 4px;
     overflow: scroll;
 }
 pre {
