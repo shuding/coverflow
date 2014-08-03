@@ -69,7 +69,7 @@ License: The MIT License
                 imgs[i].style.bottom = "60px";
                 if(!shadow && imgShadow)
                     imgs[i].style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.3)";
-                imgs[i].style["transition"] = "-webkit-transform .4s ease, transform .4s ease, margin-left .4s ease, -webkit-filter .4s ease";
+                imgs[i].style["transition"] = "-webkit-transform .4s ease, -moz-transform .4s ease, margin-left .4s ease, -webkit-filter .4s ease";
                 imgHeight = Math.max(imgHeight, imgs[i].getBoundingClientRect().height);
             }
             c.style.overflow = "scroll";
