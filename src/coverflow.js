@@ -4,6 +4,14 @@ License: The MIT License
 */
 (function(){
     window.onload = function () {
+        var browserPrefix = "";
+        if (navigator.userAgent.indexOf('Firefox') != -1) {
+            browserPrefix = "-moz-";
+        } else if (navigator.userAgent.indexOf('Chrome') != -1) {
+            browserPrefix = "-webkit-";
+        } else if (navigator.userAgent.indexOf('Safari') != -1) {
+            browserPrefix = "-webkit-";
+        }
         var setTransform3D = function (el, degree, perspective, z) {
             degree = Math.max(Math.min(degree, 90), -90);
             z -= 5;
@@ -69,7 +77,7 @@ License: The MIT License
                 imgs[i].style.bottom = "60px";
                 if(!shadow && imgShadow)
                     imgs[i].style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.3)";
-                imgs[i].style["transition"] = "transform .4s ease, margin-left .4s ease, -webkit-filter .4s ease";
+                imgs[i].style["transition"] = browserPrefix + "transform .4s ease, margin-left .4s ease, -webkit-filter .4s ease";
                 imgHeight = Math.max(imgHeight, imgs[i].getBoundingClientRect().height);
             }
             c.style.overflowX = "scroll";
