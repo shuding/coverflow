@@ -72,7 +72,7 @@ License: The MIT License
                 imgs[i].style["transition"] = "-webkit-transform .4s ease, -moz-transform .4s ease, margin-left .4s ease, -webkit-filter .4s ease";
                 imgHeight = Math.max(imgHeight, imgs[i].getBoundingClientRect().height);
             }
-            c.style.overflow = "scroll";
+            c.style.overflowX = "scroll";
             c.style.backgroundColor = bgColor;
             var titleBox = document.createElement("SPAN");
             if (!shadow) {
